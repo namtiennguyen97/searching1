@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test</title>
+</head>
+<body>
+<script>
+    function min(str){
+        let minT = str[0];
+        for (let i =1; i<str.length;i++){
+            if (str[i]< minT){
+                minT = str[i];
+            }
+        } return minT;
+    };
+
+  function max(str){
+      let maxi = str[0];
+      for (let i =0; i< str.length;i++){
+          if (str[i]> maxi){
+              maxi = str[i];
+          }
+      } return maxi;
+  };
+   let num = [];
+   for (let i=0; i<20; i++){
+       num[i] = Math.floor(Math.random()*20);
+   }
+   let kq = min(num);
+   document.write("Gia tri cua mang la: "+num+"<br>"+"Gia tri nho nhat la:"+ kq+"<br>");
+   document.write('Gia tri lon nhat la: '+max(num));
+
+</script>
+</body>
+</html>
